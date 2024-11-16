@@ -16,7 +16,7 @@ tailwind or bootstrap most famous disadvantage
 
 
   Single programming responsibility tell that
-  only function one responsibillity
+  only  one function responsibillity
 
 
   suppose form responsibility
