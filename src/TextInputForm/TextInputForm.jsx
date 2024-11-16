@@ -1,11 +1,17 @@
 import Button from "../components/Button/Button";
 import TextInput from "../components/TextInput/TextInput";
 
-function TextInputForm({ handleFormSubmit, handleTextInputChange }) {
+function TextInputForm({
+  inputType,
+  handleFormSubmit,
+  handleTextInputChange,
+  handleShowHideClick,
+}) {
   return (
     <form onSubmit={handleFormSubmit}>
       <div>
         <TextInput
+          type={inputType}
           label="Enter a word or phrase"
           placeholder="Enter your word or phrase here ..."
           onChangeHandler={handleTextInputChange}
@@ -13,7 +19,11 @@ function TextInputForm({ handleFormSubmit, handleTextInputChange }) {
       </div>
 
       <div>
-        <Button styleType="warning" text="Show / Hide" />
+        <Button
+          styleType="warning"
+          text={inputType === "password" ? "Show" : "Hide"}
+          onClickHandler={handleShowHideClick}
+        />
       </div>
 
       <div>

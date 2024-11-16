@@ -20,14 +20,18 @@ tailwind or bootstrap most famous disadvantage
 
 
   suppose form responsibility
-    ui responsibilty how it look
+    ui responsibility how it look
     form submit logic implement
-    texxt input change logic
+    text input change logic
 
+```
 
+# Presenter Container Pattern
 
+[ Presenter Container Pattern](https://www.patterns.dev/react/presentational-container-pattern)
 
-Presenter Container Pattern
+```
+
 
 if you have component
 
@@ -39,9 +43,11 @@ in 2 layer visualize the component
 
 container layer call the presentation layer
 
+
+
+
+
 ```
-
-
 
 # tailwind property
 
@@ -118,5 +124,75 @@ className={`${getButtonStyling(styleType)}}
 
 
 
+
+
+
+```
+
+# component memory
+
+```
+
+  memory management
+
+    suppose input type text
+
+    when click to button it need show text hide and show
+
+
+    in ui need changes
+
+
+
+
+  variable cannot track in ui when it change in any click event or event
+
+   let inputType = "password";
+
+
+  function handleShowHideClick() {
+    console.log("show hide click");
+    if (inputType === "password") {
+      inputType = "text";
+    } else {
+      inputType = "password";
+    }
+  }
+
+  <TextInputForm
+      inputType={inputType}
+      handleFormSubmit={handleFormSubmit}
+      handleTextInputChange={handleTextInputChange}
+      handleShowHideClick={handleShowHideClick}
+    />
+
+
+    Why?
+
+    maybe it is possible that you want to use variable for algorithm purpose not for ui
+    maybe you want dont track variable
+
+    variable changes change is not tracked
+
+    if react start to trac(component update) variable changes but you dont want in some case
+
+    2 reason
+
+    function inside variable it store in memory
+    now i call function 2 or 3 type
+
+    then variable take original value
+
+    moral of the story is
+
+    when ui update function component call
+
+
+    that's why you have to use special variable
+
+
+   Hooks
+
+    useState() == state variable return ;
 
 ```

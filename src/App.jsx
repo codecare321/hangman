@@ -1,11 +1,11 @@
 import "./App.css";
 
-import TextInputForm from "./TextInputForm/TextInputForm";
+import TextInputFormContainer from "./TextInputForm/TextInputFormContainer";
 
 function App() {
   return (
     <>
-      <TextInputForm />
+      <TextInputFormContainer />
     </>
   );
 }
