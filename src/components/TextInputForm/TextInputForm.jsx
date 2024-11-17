@@ -1,5 +1,5 @@
-import Button from "../components/Button/Button";
-import TextInput from "../components/TextInput/TextInput";
+import Button from "../Button/Button";
+import TextInput from "../TextInput/TextInput";
 
 function TextInputForm({
   inputType,

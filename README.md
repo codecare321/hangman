@@ -196,3 +196,34 @@ className={`${getButtonStyling(styleType)}}
     useState() == state variable return ;
 
 ```
+
+# react router dom
+
+```
+ <BrowserRouter>
+      <App />
+  </BrowserRouter>
+  it will work as parent router and app as child
+
+
+in app.jsx use routes
+
+
+pass data to one component to another
+
+  pass data
+  using state u can pass
+
+
+  setTimeout(() => {
+        navigate("/play", { state: { value } });
+  }, 1000);
+
+
+fetch data:
+
+  const location = useLocation();
+  const data = location.state;
+  {data.value}
+
+```
