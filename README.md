@@ -24,6 +24,19 @@ tailwind or bootstrap most famous disadvantage
     form submit logic implement
     text input change logic
 
+
+    rendering list
+
+    const arr = [1,2,3,4,5];
+
+     const arr = ['<h1>sdsds</h1>'];
+
+    {arr}
+
+    it will print this <h1>sdsds</h1>
+
+    in arr.map you can write jsx like h1
+
 ```
 
 # Presenter Container Pattern
@@ -79,8 +92,8 @@ container layer call the presentation layer
     w-full == will take full width of parent class
 
 
-
-
+    mx-1 = x access margin 1 unit of tailwind 4px
+    m-1 = x and y access margin
 
 ```
 

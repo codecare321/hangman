@@ -12,7 +12,7 @@ function TextInputFormContainer() {
     console.log("form submitted", value);
     if (value) {
       setTimeout(() => {
-        navigate("/play", { state: { value } });
+        navigate("/play", { state: { wordSelected: value } });
       }, 1000);
     }
   }
