@@ -37,11 +37,16 @@ tailwind or bootstrap most famous disadvantage
 
     in arr.map you can write jsx like h1
 
+
+    ?. ==== optional chaining
+    if not valid then next part will not execuate and it will show undefine and null
 ```
 
 # Presenter Container Pattern
 
 [ Presenter Container Pattern](https://www.patterns.dev/react/presentational-container-pattern)
+
+
 
 ```
 
@@ -134,6 +139,8 @@ className={`${getButtonStyling(styleType)}}
 
   you can write comment like this in component
        {/*  */}
+
+
 
 
 

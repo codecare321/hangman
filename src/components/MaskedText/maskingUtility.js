@@ -3,7 +3,6 @@ export function getMaskedString(originalWord, gussedLetters) {
 
   const gussedLetterSet = new Set(gussedLetters);
 
-  
   const result = originalWord
     .toUpperCase()
     .split("")
